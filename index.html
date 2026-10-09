@@ -84,6 +84,8 @@ section{padding:88px 0}
 .mock-hero .pack{font-family:var(--display);font-size:26px;font-weight:700;line-height:1.15}
 .mock-hero .life{background:rgba(255,255,255,.14);border-radius:12px;padding:10px 12px;font-size:14px}
 .mock-hero .life b{display:block;font-size:22px}
+.mock-row{display:flex;gap:8px}
+.mock-row span{flex:1;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700}
 .mock-warn{background:var(--amber-soft);color:#7A4508;border-radius:14px;padding:12px 14px;font-size:15px;display:flex;gap:8px}
 
 /* Stats */
@@ -209,10 +211,10 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:15px}
       <div>
         <div class="eyebrow">Packaging advice for farmers &amp; food businesses</div>
         <h1 class="display">Right pack.<br><em>Longer freshness.</em></h1>
-        <p class="lead">Tell FreshFeed what you are packing, where you will keep it and how it travels. It tells you which bag, box or film to use, and what to avoid.</p>
+        <p class="lead">Tell FreshFeed what you are packing, where you will keep it and how it travels.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="app.html">Get started free<svg class="icon"><use href="#i-arrow"/></svg></a>
-          <a class="btn btn-light" href="#how">See how it works</a>
+          <a class="btn btn-light" href="app.html">Try it as a guest</a>
         </div>
         <div class="trust">
           <span><svg class="icon"><use href="#i-check"/></svg>Free to use</span>
@@ -231,7 +233,11 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:15px}
           <div style="font-size:14px;opacity:.9">Micro-perforated LDPE film</div>
           <div class="life">Keeps fresh at 13–15°C<b>2–3 weeks</b></div>
         </div>
-        <div class="mock-warn"><svg class="icon" style="width:20px;height:20px"><use href="#i-alert"/></svg><span>Not for the fridge. Below 12°C mangoes get chilling injury.</span></div>
+        <div class="mock-warn"><svg class="icon" style="width:20px;height:20px"><use href="#i-alert"/></svg><span>Not for the fridge.</span></div>
+        <div class="mock-row">
+          <span style="background:#C8741F;color:#fff">Spec sheet</span>
+          <span style="background:var(--ink);color:#fff">WhatsApp</span>
+        </div>
       </div>
     </div>
   </section>
@@ -256,7 +262,7 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:15px}
         <div class="feature"><div class="f-icon" style="background:var(--green-soft);color:var(--green)"><svg class="icon"><use href="#i-box"/></svg></div><h3>The right pack, in plain words</h3><p>Mesh bag, perforated film, foil pouch or vented jar — matched to how your produce breathes and spoils.</p></div>
         <div class="feature"><div class="f-icon" style="background:#EAF0F7;color:#1C3857"><svg class="icon"><use href="#i-mic"/></svg></div><h3>Speak in your language</h3><p>Say “aam, 2 hafte, truck” in English, Hindi or Marathi. Advice can be read aloud too.</p></div>
         <div class="feature"><div class="f-icon" style="background:var(--amber-soft);color:#7A4508"><svg class="icon"><use href="#i-alert"/></svg></div><h3>Warnings before losses</h3><p>Chilling injury, ethylene damage, too-long storage and food-safety rules flagged before they cost you.</p></div>
-        <div class="feature"><div class="f-icon" style="background:#FBE7D3;color:#9A5714"><svg class="icon"><use href="#i-file"/></svg></div><h3>Spec sheet for suppliers</h3><p>A printable sheet you can send on WhatsApp so your supplier gives you exactly the right material.</p></div>
+        <div class="feature"><div class="f-icon" style="background:#FBE7D3;color:#9A5714"><svg class="icon"><use href="#i-file"/></svg></div><h3>Spec sheet for suppliers</h3><p>A printable sheet with a QR code. Send it on WhatsApp so your supplier gives you exactly the right material.</p></div>
         <div class="feature"><div class="f-icon" style="background:var(--green-soft);color:var(--green)"><svg class="icon"><use href="#i-rupee"/></svg></div><h3>Cost and thickness estimates</h3><p>Know roughly what a bag, pouch or crate should cost in rupees before you talk to a supplier.</p></div>
         <div class="feature"><div class="f-icon" style="background:#EAF0F7;color:#1C3857"><svg class="icon"><use href="#i-sliders"/></svg></div><h3>Expert mode</h3><p>Respiration rates, target O₂/CO₂ and the film oxygen transmission (OTR) your bag needs — calculated live.</p></div>
       </div>
