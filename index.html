@@ -100,6 +100,32 @@ section{padding:88px 0}
 .feature p{margin:0;color:var(--muted)}
 .f-icon{width:48px;height:48px;border-radius:14px;display:flex;align-items:center;justify-content:center}
 
+.band{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+
+/* How it works */
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.step{display:flex;flex-direction:column;gap:10px}
+.step-num{width:44px;height:44px;border-radius:50%;background:var(--green-soft);color:var(--green);font-weight:700;font-size:18px;display:flex;align-items:center;justify-content:center}
+.step h3{margin:0;font-size:20px}
+.step p{margin:0;color:var(--muted)}
+
+/* Who it is for */
+.aud-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.aud{border-radius:var(--radius);padding:22px;display:flex;flex-direction:column;gap:6px;min-height:150px}
+.aud h3{margin:0;font-size:19px}
+.aud p{margin:0;font-size:15px}
+
+/* About */
+.about-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:48px;align-items:start}
+.about-text h2{font-size:40px;margin:10px 0 20px}
+.about-text p{font-size:18px;color:var(--muted);margin:0 0 16px}
+.sources{margin-top:24px;padding:16px 18px;border-radius:14px;background:#EAF0F7;color:#1C3857;font-size:15px}
+.values{display:flex;flex-direction:column;gap:12px}
+.value{display:flex;gap:14px;background:var(--ground);border:1px solid var(--line);border-radius:16px;padding:18px}
+.value .icon{color:var(--green);margin-top:2px}
+.value b{display:block;font-size:17px}
+.value span{color:var(--muted);font-size:15px}
+
 /* Footer */
 footer{border-top:1px solid var(--line);padding:40px 0;font-size:15px}
 .foot-row{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
@@ -114,11 +140,13 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:15px}
   .hero h1{font-size:40px;letter-spacing:-.6px}
   .hero .lead{font-size:18px}
   .hero-actions .btn{flex:1}
-  .stats-grid,.features-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .section-head h2{font-size:30px}
+  .stats-grid,.features-grid,.aud-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .about-grid{grid-template-columns:1fr;gap:36px}
+  .section-head h2,.about-text h2{font-size:30px}
 }
 @media (max-width:560px){
-  .features-grid{grid-template-columns:1fr}
+  .features-grid,.steps,.aud-grid{grid-template-columns:1fr}
+  .aud{min-height:0}
 }
 </style>
 </head>
@@ -135,6 +163,9 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:15px}
     <symbol id="i-sliders" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12"/><circle cx="16" cy="6" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18" cy="18" r="2"/></symbol>
     <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></symbol>
     <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 10c0 5.5-7 10-7 10z"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></symbol>
     <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
   </defs>
 </svg>
@@ -231,8 +262,52 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:15px}
       </div>
     </div>
   </section>
-  <section id="how"></section>
-  <section id="about"></section>
+  <section id="how" class="band">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">How it works</div>
+        <h2 class="display">Three questions. One clear answer.</h2>
+      </div>
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><h3>Pick or say your produce</h3><p>Tap from 80 foods — fruits, vegetables, dairy, snacks and pickles — or just say its name.</p></div>
+        <div class="step"><div class="step-num">2</div><h3>Tell us storage, time and travel</h3><p>Room, cold store or fridge. Three days to three months. Local market, truck, courier or export.</p></div>
+        <div class="step"><div class="step-num">3</div><h3>Get your pack and share it</h3><p>See what to buy, what to avoid and how long it will last. Share the spec sheet with your supplier.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Who it is for</div>
+        <h2 class="display">Made for the people who grow and sell food</h2>
+      </div>
+      <div class="aud-grid">
+        <div class="aud" style="background:var(--green-soft);color:var(--green-dark)"><h3>Farmers</h3><p>Cut losses between the field and the mandi.</p></div>
+        <div class="aud" style="background:var(--amber-soft);color:#7A4508"><h3>FPOs &amp; co-operatives</h3><p>Standardise packing across many members.</p></div>
+        <div class="aud" style="background:#EAF0F7;color:#1C3857"><h3>Traders &amp; exporters</h3><p>Plan cold chain and packs for long journeys.</p></div>
+        <div class="aud" style="background:#F3E6EF;color:#5B2A4B"><h3>Small food makers</h3><p>Keep snacks crisp, dairy safe and pickles sound.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="band">
+    <div class="container about-grid">
+      <div class="about-text">
+        <div class="eyebrow">About FreshFeed</div>
+        <h2 class="display">Less food lost. More money in the farmer’s pocket.</h2>
+        <p>A large share of fruits and vegetables in India spoil after harvest — often because they are packed in the wrong bag, sealed when they need to breathe, or chilled when they cannot take the cold.</p>
+        <p>FreshFeed turns decades of post-harvest science into simple, local-language advice. We match each food’s breathing rate, ideal temperature and humidity, and gas needs to a pack you can actually buy nearby.</p>
+        <div class="sources"><b>Our data sources</b><br>USDA Agriculture Handbook 66 (2016), Cantwell – UC Davis (2001), Kader (2002), a produce storage technical manual, and film data from Poly Print and NatureWorks.</div>
+      </div>
+      <div class="values">
+        <div class="value"><svg class="icon"><use href="#i-book"/></svg><div><b>Science first</b><span>Every recommendation traces back to a published source.</span></div></div>
+        <div class="value"><svg class="icon"><use href="#i-heart"/></svg><div><b>Simple for everyone</b><span>Big buttons, pictures, voice and three languages.</span></div></div>
+        <div class="value"><svg class="icon"><use href="#i-leaf"/></svg><div><b>Honest about eco options</b><span>We show greener packs — and their trade-offs.</span></div></div>
+        <div class="value"><svg class="icon"><use href="#i-shield"/></svg><div><b>Your data stays yours</b><span>Your account and saved advice are private to you.</span></div></div>
+      </div>
+    </div>
+  </section>
   <section id="faq"></section>
   <section id="contact"></section>
 </main>
