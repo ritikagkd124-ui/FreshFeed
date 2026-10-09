@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>FreshFeed — Right pack, longer freshness</title>
+<meta name="description" content="FreshFeed tells farmers, FPOs and small food businesses which bag, box or film to use so produce stays fresh longer.">
+<meta name="theme-color" content="#2E6B45">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Hind:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --ground:#F6F4EC;--card:#FFFFFF;--ink:#1B2E22;--muted:#4E5B52;--line:#DDD8C8;
+  --green:#2E6B45;--green-dark:#1F4D31;--green-soft:#E3EFE5;
+  --amber:#C8741F;--amber-soft:#FBEBD0;
+  --display:'Fraunces',Georgia,serif;--body:'Hind',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --gutter:32px;--radius:18px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.5}
+a{color:var(--green);text-decoration:none}
+a:hover{color:var(--green-dark)}
+button{font:inherit;cursor:pointer}
+:focus-visible{outline:3px solid #D08A2C;outline-offset:2px}
+[hidden]{display:none!important}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.container{width:100%;max-width:1200px;margin:0 auto;padding:0 var(--gutter)}
+.display{font-family:var(--display);font-weight:700;letter-spacing:-.4px;line-height:1.1;margin:0}
+.muted{color:var(--muted)}
+section{padding:88px 0}
+
+/* Buttons */
+.btn{height:52px;padding:0 22px;border-radius:14px;border:1px solid transparent;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:700;white-space:nowrap}
+.btn-sm{height:42px;padding:0 16px;font-size:15px;border-radius:12px}
+.btn-primary{background:var(--green);color:#fff}
+.btn-primary:hover{background:var(--green-dark);color:#fff}
+.btn-light{background:var(--card);color:var(--ink);border-color:var(--line)}
+.btn-ghost{background:transparent;color:var(--ink)}
+.btn-ghost:hover{background:#ECE8DC}
+.icon{width:22px;height:22px;flex-shrink:0}
+
+/* Header */
+.header{position:sticky;top:0;z-index:40;background:rgba(246,244,236,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.header-inner{display:flex;align-items:center;gap:20px;height:72px}
+.brand{display:flex;align-items:center;gap:10px;color:var(--ink)}
+.brand:hover{color:var(--ink)}
+.brand-mark{width:40px;height:40px;border-radius:12px;background:var(--green);color:#fff;display:flex;align-items:center;justify-content:center}
+.brand-name{font-family:var(--display);font-weight:700;font-size:22px}
+.nav{display:flex;gap:2px;margin-left:8px}
+.nav a{height:42px;padding:0 14px;display:flex;align-items:center;border-radius:10px;color:var(--muted);font-weight:500}
+.nav a:hover{background:#ECE8DC;color:var(--ink)}
+.header-right{margin-left:auto;display:flex;align-items:center;gap:8px}
+.menu-btn{display:none;width:44px;height:44px;border-radius:12px;border:1px solid var(--line);background:var(--card);align-items:center;justify-content:center}
+.mobile-nav{display:none;border-top:1px solid var(--line);padding:10px var(--gutter) 16px;flex-direction:column;gap:4px}
+.mobile-nav a{min-height:48px;display:flex;align-items:center;padding:0 12px;border-radius:10px;color:var(--ink);font-weight:500}
+.mobile-nav.open{display:flex}
+
+/* Footer */
+footer{border-top:1px solid var(--line);padding:40px 0;font-size:15px}
+.foot-row{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+
+@media (max-width:900px){
+  :root{--gutter:16px}
+  .nav,.auth-desktop{display:none}
+  .menu-btn{display:flex}
+  section{padding:56px 0}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-leaf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-8 5-14 14-14 0 9-6 14-14 14z"/><path d="M5 19l8-8"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  </defs>
+</svg>
+
+<a href="#main" class="sr-only">Skip to content</a>
+
+<header class="header">
+  <div class="container header-inner">
+    <a class="brand" href="#top" aria-label="FreshFeed home">
+      <span class="brand-mark"><svg class="icon"><use href="#i-leaf"/></svg></span>
+      <span class="brand-name">FreshFeed</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#about">About</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-right">
+      <div class="auth-desktop">
+        <button class="btn btn-ghost btn-sm">Sign in</button>
+        <button class="btn btn-primary btn-sm">Sign up</button>
+      </div>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false" aria-controls="mobileNav"><svg class="icon"><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#features">Features</a>
+    <a href="#how">How it works</a>
+    <a href="#about">About</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
+
+<main id="main">
+  <!-- Sections are added one by one -->
+  <section id="top"></section>
+  <section id="features"></section>
+  <section id="how"></section>
+  <section id="about"></section>
+  <section id="faq"></section>
+  <section id="contact"></section>
+</main>
+
+<footer>
+  <div class="container foot-row">
+    <a class="brand" href="#top"><span class="brand-mark"><svg class="icon"><use href="#i-leaf"/></svg></span><span class="brand-name">FreshFeed</span></a>
+    <span class="muted">© <span id="year"></span> FreshFeed</span>
+  </div>
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// Mobile menu
+var menuBtn = document.getElementById('menuBtn');
+var mobileNav = document.getElementById('mobileNav');
+menuBtn.addEventListener('click', function () {
+  var open = mobileNav.classList.toggle('open');
+  menuBtn.setAttribute('aria-expanded', open);
+});
+mobileNav.addEventListener('click', function (e) {
+  if (e.target.tagName === 'A') { mobileNav.classList.remove('open'); menuBtn.setAttribute('aria-expanded', false); }
+});
+</script>
+</body>
+</html>

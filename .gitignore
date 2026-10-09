@@ -1,0 +1,14 @@
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Secrets (never commit Supabase service_role keys)
+.env
+.env.*
+
+# Local tool state
+supabase/.temp/
+.vercel/
+node_modules/
