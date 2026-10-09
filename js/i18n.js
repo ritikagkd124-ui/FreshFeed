@@ -48,6 +48,15 @@
       a3_t: 'Traders & exporters', a3_d: 'Plan cold chain and packs for long journeys.',
       a4_t: 'Small food makers', a4_d: 'Keep snacks crisp, dairy safe and pickles sound.',
 
+      about_eyebrow: 'About FreshFeed', about_title: 'Less food lost. More money in the farmer’s pocket.',
+      about_p1: 'A large share of fruits and vegetables in India spoil after harvest — often because they are packed in the wrong bag, sealed when they need to breathe, or chilled when they cannot take the cold.',
+      about_p2: 'FreshFeed turns decades of post-harvest science into simple, local-language advice. We match each food’s breathing rate, ideal temperature and humidity, and gas needs to a pack you can actually buy nearby.',
+      about_src_t: 'Our data sources', about_src: 'USDA Agriculture Handbook 66 (2016), Cantwell – UC Davis (2001), Kader (2002), a produce storage technical manual, and film data from Poly Print and NatureWorks.',
+      v1_t: 'Science first', v1_d: 'Every recommendation traces back to a published source.',
+      v2_t: 'Simple for everyone', v2_d: 'Big buttons, pictures, voice and three languages.',
+      v3_t: 'Honest about eco options', v3_d: 'We show greener packs — and their trade-offs.',
+      v4_t: 'Your data stays yours', v4_d: 'Your account and saved advice are private to you.',
+
       faq_eyebrow: 'Questions', faq_title: 'Frequently asked questions',
       q1: 'Is FreshFeed free?', q1a: 'Yes. The advice, spec sheet and expert mode are free to use.',
       q2: 'Do I need an account?', q2a: 'No — you can use the app as a guest. With a free account your advice and feedback are saved to your profile and follow you to any phone or computer.',
@@ -106,6 +115,15 @@
       a3_t: 'व्यापारी और निर्यातक', a3_d: 'लंबे सफ़र के लिए कोल्ड चेन और पैक की योजना।',
       a4_t: 'छोटे खाद्य उत्पादक', a4_d: 'नमकीन कुरकुरा, डेयरी सुरक्षित, अचार सही।',
 
+      about_eyebrow: 'FreshFeed के बारे में', about_title: 'कम बर्बादी। किसान की जेब में ज़्यादा पैसा।',
+      about_p1: 'भारत में बहुत से फल और सब्ज़ियाँ कटाई के बाद खराब हो जाते हैं — अक्सर गलत बैग, साँस की ज़रूरत होने पर बंद पैक, या ठंड न सहने वाली फसल को ठंडा करने से।',
+      about_p2: 'FreshFeed दशकों के शोध को आसान, अपनी भाषा की सलाह में बदलता है। हर फसल की श्वसन दर, सही तापमान, नमी और गैस की ज़रूरत के हिसाब से ऐसा पैक सुझाते हैं जो पास में मिल सके।',
+      about_src_t: 'हमारे डेटा स्रोत', about_src: 'USDA कृषि हैंडबुक 66 (2016), कैंटवेल – UC डेविस (2001), कादर (2002), भंडारण तकनीकी मैनुअल, और Poly Print व NatureWorks का फिल्म डेटा।',
+      v1_t: 'विज्ञान पहले', v1_d: 'हर सलाह किसी प्रकाशित स्रोत पर आधारित है।',
+      v2_t: 'सबके लिए आसान', v2_d: 'बड़े बटन, चित्र, आवाज़ और तीन भाषाएँ।',
+      v3_t: 'पर्यावरण विकल्प ईमानदारी से', v3_d: 'हरित पैक दिखाते हैं — उनकी कमियों के साथ।',
+      v4_t: 'आपका डेटा आपका', v4_d: 'आपका खाता और सलाह सिर्फ़ आपके लिए।',
+
       faq_eyebrow: 'सवाल', faq_title: 'अक्सर पूछे जाने वाले सवाल',
       q1: 'क्या FreshFeed मुफ़्त है?', q1a: 'हाँ। सलाह, स्पेक शीट और विशेषज्ञ मोड मुफ़्त हैं।',
       q2: 'क्या खाता ज़रूरी है?', q2a: 'नहीं — आप बिना खाते के भी ऐप इस्तेमाल कर सकते हैं। मुफ़्त खाते से आपकी सलाह हर फ़ोन और कंप्यूटर पर सेव रहती है।',
@@ -163,6 +181,15 @@
       a2_t: 'FPO आणि सहकारी संस्था', a2_d: 'सर्व सभासदांचे पॅकिंग एकसारखे करा.',
       a3_t: 'व्यापारी आणि निर्यातदार', a3_d: 'लांबच्या प्रवासासाठी कोल्ड चेन आणि पॅकचे नियोजन.',
       a4_t: 'लघु खाद्य उत्पादक', a4_d: 'फरसाण कुरकुरीत, दूध सुरक्षित, लोणचे योग्य.',
+
+      about_eyebrow: 'FreshFeed बद्दल', about_title: 'कमी नासाडी. शेतकऱ्याच्या खिशात जास्त पैसे.',
+      about_p1: 'भारतात अनेक फळे आणि भाज्या काढणीनंतर खराब होतात — अनेकदा चुकीच्या पिशवीमुळे, श्वास घेण्याची गरज असताना बंद पॅकमुळे, किंवा थंडी न सोसणाऱ्या पिकाला थंड केल्यामुळे.',
+      about_p2: 'FreshFeed अनेक दशकांचे संशोधन सोप्या, स्थानिक भाषेतील सल्ल्यात बदलते. प्रत्येक पिकाचा श्वसन दर, योग्य तापमान, आर्द्रता आणि वायूची गरज पाहून जवळ मिळणारा पॅक सुचवतो.',
+      about_src_t: 'आमचे डेटा स्रोत', about_src: 'USDA कृषी हँडबुक 66 (2016), कॅंटवेल – UC डेव्हिस (2001), कादर (2002), साठवण तांत्रिक मॅन्युअल, आणि Poly Print व NatureWorks चा फिल्म डेटा.',
+      v1_t: 'विज्ञान आधी', v1_d: 'प्रत्येक सल्ला प्रकाशित स्रोतावर आधारित.',
+      v2_t: 'सर्वांसाठी सोपे', v2_d: 'मोठी बटणे, चित्रे, आवाज आणि तीन भाषा.',
+      v3_t: 'पर्यावरण पर्याय प्रामाणिकपणे', v3_d: 'हरित पॅक दाखवतो — त्यांच्या मर्यादांसह.',
+      v4_t: 'तुमचा डेटा तुमचाच', v4_d: 'तुमचे खाते आणि सल्ले फक्त तुमच्यासाठी.',
 
       faq_eyebrow: 'प्रश्न', faq_title: 'नेहमी विचारले जाणारे प्रश्न',
       q1: 'FreshFeed मोफत आहे का?', q1a: 'हो. सल्ला, स्पेक शीट आणि तज्ज्ञ मोड मोफत आहेत.',
