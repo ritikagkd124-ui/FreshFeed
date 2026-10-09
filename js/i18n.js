@@ -37,6 +37,11 @@
       f5_t: 'Cost and thickness estimates', f5_d: 'Know roughly what a bag, pouch or crate should cost in rupees before you talk to a supplier.',
       f6_t: 'Expert mode', f6_d: 'Respiration rates, target O₂/CO₂ and the film oxygen transmission (OTR) your bag needs — calculated live.',
 
+      how_eyebrow: 'How it works', how_title: 'Three questions. One clear answer.',
+      s1_t: 'Pick or say your produce', s1_d: 'Tap from 80 foods — fruits, vegetables, dairy, snacks and pickles — or just say its name.',
+      s2_t: 'Tell us storage, time and travel', s2_d: 'Room, cold store or fridge. Three days to three months. Local market, truck, courier or export.',
+      s3_t: 'Get your pack and share it', s3_d: 'See what to buy, what to avoid and how long it will last. Share the spec sheet with your supplier.',
+
       faq_eyebrow: 'Questions', faq_title: 'Frequently asked questions',
       q1: 'Is FreshFeed free?', q1a: 'Yes. The advice, spec sheet and expert mode are free to use.',
       q2: 'Do I need an account?', q2a: 'No — you can use the app as a guest. With a free account your advice and feedback are saved to your profile and follow you to any phone or computer.',
@@ -84,6 +89,11 @@
       f5_t: 'मोटाई और कीमत का अनुमान', f5_d: 'सप्लायर से बात करने से पहले जानें बैग, पाउच या क्रेट की लगभग कीमत।',
       f6_t: 'विशेषज्ञ मोड', f6_d: 'श्वसन दर, O₂/CO₂ लक्ष्य और बैग के लिए ज़रूरी फिल्म OTR — तुरंत गणना।',
 
+      how_eyebrow: 'कैसे काम करता है', how_title: 'तीन सवाल। एक साफ़ जवाब।',
+      s1_t: 'फसल चुनें या बोलें', s1_d: '80 खाद्य पदार्थों में से चुनें — फल, सब्ज़ी, डेयरी, नमकीन, अचार — या बस नाम बोलें।',
+      s2_t: 'भंडारण, समय और सफ़र बताएँ', s2_d: 'कमरा, कोल्ड स्टोर या फ्रिज। 3 दिन से 3 महीने। मंडी, ट्रक, कूरियर या निर्यात।',
+      s3_t: 'पैक जानें और शेयर करें', s3_d: 'क्या खरीदें, क्या न करें और कितने दिन चलेगा। स्पेक शीट सप्लायर को भेजें।',
+
       faq_eyebrow: 'सवाल', faq_title: 'अक्सर पूछे जाने वाले सवाल',
       q1: 'क्या FreshFeed मुफ़्त है?', q1a: 'हाँ। सलाह, स्पेक शीट और विशेषज्ञ मोड मुफ़्त हैं।',
       q2: 'क्या खाता ज़रूरी है?', q2a: 'नहीं — आप बिना खाते के भी ऐप इस्तेमाल कर सकते हैं। मुफ़्त खाते से आपकी सलाह हर फ़ोन और कंप्यूटर पर सेव रहती है।',
@@ -130,6 +140,11 @@
       f4_t: 'पुरवठादारासाठी स्पेक शीट', f4_d: 'QR कोडसह प्रिंट शीट. व्हॉट्सॲपवर पाठवा म्हणजे पुरवठादार योग्य साहित्य देईल.',
       f5_t: 'जाडी आणि किंमतीचा अंदाज', f5_d: 'पुरवठादाराशी बोलण्यापूर्वी पिशवी, पाउच किंवा क्रेटची अंदाजे किंमत जाणा.',
       f6_t: 'तज्ज्ञ मोड', f6_d: 'श्वसन दर, O₂/CO₂ लक्ष्य आणि पिशवीसाठी आवश्यक फिल्म OTR — लगेच गणना.',
+
+      how_eyebrow: 'कसे काम करते', how_title: 'तीन प्रश्न. एक स्पष्ट उत्तर.',
+      s1_t: 'पीक निवडा किंवा बोला', s1_d: '80 खाद्यपदार्थांतून निवडा — फळे, भाज्या, दुग्धजन्य, फरसाण, लोणची — किंवा फक्त नाव बोला.',
+      s2_t: 'साठवण, वेळ आणि प्रवास सांगा', s2_d: 'खोली, कोल्ड स्टोअर किंवा फ्रिज. 3 दिवस ते 3 महिने. बाजार, ट्रक, कुरिअर किंवा निर्यात.',
+      s3_t: 'पॅक जाणा आणि शेअर करा', s3_d: 'काय घ्यावे, काय टाळावे आणि किती दिवस टिकेल. स्पेक शीट पुरवठादाराला पाठवा.',
 
       faq_eyebrow: 'प्रश्न', faq_title: 'नेहमी विचारले जाणारे प्रश्न',
       q1: 'FreshFeed मोफत आहे का?', q1a: 'हो. सल्ला, स्पेक शीट आणि तज्ज्ञ मोड मोफत आहेत.',
