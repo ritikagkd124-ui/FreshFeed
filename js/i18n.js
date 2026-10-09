@@ -42,6 +42,12 @@
       s2_t: 'Tell us storage, time and travel', s2_d: 'Room, cold store or fridge. Three days to three months. Local market, truck, courier or export.',
       s3_t: 'Get your pack and share it', s3_d: 'See what to buy, what to avoid and how long it will last. Share the spec sheet with your supplier.',
 
+      aud_eyebrow: 'Who it is for', aud_title: 'Made for the people who grow and sell food',
+      a1_t: 'Farmers', a1_d: 'Cut losses between the field and the mandi.',
+      a2_t: 'FPOs & co-operatives', a2_d: 'Standardise packing across many members.',
+      a3_t: 'Traders & exporters', a3_d: 'Plan cold chain and packs for long journeys.',
+      a4_t: 'Small food makers', a4_d: 'Keep snacks crisp, dairy safe and pickles sound.',
+
       faq_eyebrow: 'Questions', faq_title: 'Frequently asked questions',
       q1: 'Is FreshFeed free?', q1a: 'Yes. The advice, spec sheet and expert mode are free to use.',
       q2: 'Do I need an account?', q2a: 'No — you can use the app as a guest. With a free account your advice and feedback are saved to your profile and follow you to any phone or computer.',
@@ -94,6 +100,12 @@
       s2_t: 'भंडारण, समय और सफ़र बताएँ', s2_d: 'कमरा, कोल्ड स्टोर या फ्रिज। 3 दिन से 3 महीने। मंडी, ट्रक, कूरियर या निर्यात।',
       s3_t: 'पैक जानें और शेयर करें', s3_d: 'क्या खरीदें, क्या न करें और कितने दिन चलेगा। स्पेक शीट सप्लायर को भेजें।',
 
+      aud_eyebrow: 'किसके लिए', aud_title: 'अन्न उगाने और बेचने वालों के लिए',
+      a1_t: 'किसान', a1_d: 'खेत से मंडी तक नुकसान कम करें।',
+      a2_t: 'FPO और सहकारी', a2_d: 'सभी सदस्यों की पैकिंग एक जैसी करें।',
+      a3_t: 'व्यापारी और निर्यातक', a3_d: 'लंबे सफ़र के लिए कोल्ड चेन और पैक की योजना।',
+      a4_t: 'छोटे खाद्य उत्पादक', a4_d: 'नमकीन कुरकुरा, डेयरी सुरक्षित, अचार सही।',
+
       faq_eyebrow: 'सवाल', faq_title: 'अक्सर पूछे जाने वाले सवाल',
       q1: 'क्या FreshFeed मुफ़्त है?', q1a: 'हाँ। सलाह, स्पेक शीट और विशेषज्ञ मोड मुफ़्त हैं।',
       q2: 'क्या खाता ज़रूरी है?', q2a: 'नहीं — आप बिना खाते के भी ऐप इस्तेमाल कर सकते हैं। मुफ़्त खाते से आपकी सलाह हर फ़ोन और कंप्यूटर पर सेव रहती है।',
@@ -145,6 +157,12 @@
       s1_t: 'पीक निवडा किंवा बोला', s1_d: '80 खाद्यपदार्थांतून निवडा — फळे, भाज्या, दुग्धजन्य, फरसाण, लोणची — किंवा फक्त नाव बोला.',
       s2_t: 'साठवण, वेळ आणि प्रवास सांगा', s2_d: 'खोली, कोल्ड स्टोअर किंवा फ्रिज. 3 दिवस ते 3 महिने. बाजार, ट्रक, कुरिअर किंवा निर्यात.',
       s3_t: 'पॅक जाणा आणि शेअर करा', s3_d: 'काय घ्यावे, काय टाळावे आणि किती दिवस टिकेल. स्पेक शीट पुरवठादाराला पाठवा.',
+
+      aud_eyebrow: 'कोणासाठी', aud_title: 'अन्न पिकवणाऱ्या आणि विकणाऱ्यांसाठी',
+      a1_t: 'शेतकरी', a1_d: 'शेतापासून मंडईपर्यंत नुकसान कमी करा.',
+      a2_t: 'FPO आणि सहकारी संस्था', a2_d: 'सर्व सभासदांचे पॅकिंग एकसारखे करा.',
+      a3_t: 'व्यापारी आणि निर्यातदार', a3_d: 'लांबच्या प्रवासासाठी कोल्ड चेन आणि पॅकचे नियोजन.',
+      a4_t: 'लघु खाद्य उत्पादक', a4_d: 'फरसाण कुरकुरीत, दूध सुरक्षित, लोणचे योग्य.',
 
       faq_eyebrow: 'प्रश्न', faq_title: 'नेहमी विचारले जाणारे प्रश्न',
       q1: 'FreshFeed मोफत आहे का?', q1a: 'हो. सल्ला, स्पेक शीट आणि तज्ज्ञ मोड मोफत आहेत.',
