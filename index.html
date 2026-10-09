@@ -57,6 +57,27 @@ section{padding:88px 0}
 .mobile-nav{display:none;border-top:1px solid var(--line);padding:10px var(--gutter) 16px;flex-direction:column;gap:4px}
 .mobile-nav a{min-height:48px;display:flex;align-items:center;padding:0 12px;border-radius:10px;color:var(--ink);font-weight:500}
 .mobile-nav.open{display:flex}
+.mobile-nav .row{display:flex;gap:10px;padding-top:8px}
+.mobile-nav .row .btn{flex:1;justify-content:center}
+.btn-block{width:100%}
+
+/* Sign in / sign up window */
+.overlay{position:fixed;inset:0;background:rgba(27,46,34,.45);z-index:60;display:flex;align-items:center;justify-content:center;padding:20px}
+.modal{background:var(--card);border-radius:24px;width:100%;max-width:480px;max-height:calc(100vh - 40px);overflow:auto;padding:28px;position:relative;box-shadow:0 24px 64px rgba(0,0,0,.25)}
+.modal h2{font-family:var(--display);font-size:28px;margin:0 0 4px;padding-right:48px}
+.modal .sub{color:var(--muted);margin:0 0 20px;overflow-wrap:anywhere}
+.close{position:absolute;top:16px;right:16px;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--card);display:flex;align-items:center;justify-content:center}
+.tabs{display:grid;grid-template-columns:1fr 1fr;background:var(--ground);border-radius:14px;padding:4px;margin-bottom:20px}
+.tabs button{height:44px;border:none;border-radius:11px;background:none;font-weight:600;color:var(--muted)}
+.tabs button[aria-selected="true"]{background:var(--card);color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.form{display:flex;flex-direction:column;gap:14px}
+.pw-wrap{position:relative;display:block}
+.pw-wrap input{padding-right:56px}
+.pw-toggle{position:absolute;right:3px;top:3px;width:44px;height:44px;border:none;background:none;color:var(--muted);display:flex;align-items:center;justify-content:center}
+.link-btn{background:none;border:none;color:var(--green);font-weight:600;padding:0;min-height:32px}
+.row-end{display:flex;justify-content:flex-end}
+.check{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:var(--muted);font-weight:400}
+.check input{width:20px;height:20px;margin-top:1px;accent-color:var(--green);flex-shrink:0}
 
 .eyebrow{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--green)}
 .section-head{max-width:680px;margin-bottom:40px;display:flex;flex-direction:column;gap:10px}
@@ -224,6 +245,8 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:15px}
     <symbol id="i-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l1.5-4A8 8 0 1 1 9 19.5z"/></symbol>
     <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></symbol>
     <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
     <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
   </defs>
 </svg>
@@ -250,8 +273,8 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:15px}
         <button type="button" data-lang="mr" aria-pressed="false" lang="mr">मरा</button>
       </div>
       <div class="auth-desktop">
-        <button class="btn btn-ghost btn-sm" data-i18n="sign_in">Sign in</button>
-        <button class="btn btn-primary btn-sm" data-i18n="sign_up">Sign up</button>
+        <button class="btn btn-ghost btn-sm" data-open="signin" data-i18n="sign_in">Sign in</button>
+        <button class="btn btn-primary btn-sm" data-open="signup" data-i18n="sign_up">Sign up</button>
       </div>
       <button class="menu-btn" id="menuBtn" aria-label="Menu" data-i18n-aria="menu_label" aria-expanded="false" aria-controls="mobileNav"><svg class="icon"><use href="#i-menu"/></svg></button>
     </div>
@@ -262,8 +285,70 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:15px}
     <a href="#about" data-i18n="nav_about">About</a>
     <a href="#faq" data-i18n="nav_faq">FAQ</a>
     <a href="#contact" data-i18n="nav_contact">Contact</a>
+    <div class="row">
+      <button class="btn btn-light" data-open="signin" data-i18n="sign_in">Sign in</button>
+      <button class="btn btn-primary" data-open="signup" data-i18n="sign_up">Sign up</button>
+    </div>
   </div>
 </header>
+
+<div class="overlay" id="authOverlay" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+    <button class="close" data-close aria-label="Close"><svg class="icon"><use href="#i-x"/></svg></button>
+
+    <div data-view="auth">
+      <h2 id="authTitle">Welcome to FreshFeed</h2>
+      <p class="sub">Sign in or create an account to open your dashboard.</p>
+      <div class="tabs" role="tablist">
+        <button type="button" role="tab" aria-selected="true" data-tab="signin" data-i18n="sign_in">Sign in</button>
+        <button type="button" role="tab" aria-selected="false" data-tab="signup" data-i18n="sign_up">Sign up</button>
+      </div>
+
+      <form class="form" id="signinForm" novalidate>
+        <label class="field"><span data-i18n="f_email">Email</span><input name="email" type="email" autocomplete="email" required></label>
+        <label class="field"><span>Password</span><span class="pw-wrap"><input name="password" type="password" autocomplete="current-password" required minlength="8"><button type="button" class="pw-toggle" aria-label="Show password"><svg class="icon"><use href="#i-eye"/></svg></button></span></label>
+        <div class="row-end"><button type="button" class="link-btn" data-show="forgot">Forgot password?</button></div>
+        <div data-msg role="status" aria-live="polite"></div>
+        <button class="btn btn-primary btn-block" type="submit"><span data-i18n="sign_in">Sign in</span></button>
+        <button type="button" class="btn btn-light btn-block" data-action="demo"><span>Use demo farmer account</span></button>
+        <p class="hint" style="margin:0;text-align:center;font-size:13px;color:var(--muted)">demo.farmer@freshfeed.in · Farmer@123</p>
+      </form>
+
+      <form class="form" id="signupForm" novalidate hidden>
+        <label class="field"><span>Full name</span><input name="full_name" autocomplete="name" required minlength="2" maxlength="120"></label>
+        <label class="field"><span data-i18n="f_email">Email</span><input name="email" type="email" autocomplete="email" required></label>
+        <div class="grid2">
+          <label class="field"><span><span data-i18n="f_phone">Phone</span> <span class="opt" data-i18n="optional">(optional)</span></span><input name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="20"></label>
+          <label class="field"><span>I am a</span>
+            <select name="role">
+              <option value="farmer">Farmer</option>
+              <option value="fpo">FPO / co-operative</option>
+              <option value="trader">Trader / exporter</option>
+              <option value="processor">Food maker / processor</option>
+              <option value="student">Student / researcher</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+        </div>
+        <label class="field"><span>Password</span><span class="pw-wrap"><input name="password" type="password" autocomplete="new-password" required minlength="8"><button type="button" class="pw-toggle" aria-label="Show password"><svg class="icon"><use href="#i-eye"/></svg></button></span><span class="hint">At least 8 characters.</span></label>
+        <label class="check"><input type="checkbox" name="agree" required><span>I agree that FreshFeed stores my account details to provide this service.</span></label>
+        <div data-msg role="status" aria-live="polite"></div>
+        <button class="btn btn-primary btn-block" type="submit"><span>Create account</span></button>
+      </form>
+    </div>
+
+    <div data-view="forgot" hidden>
+      <h2>Reset your password</h2>
+      <p class="sub">Enter your email and we will send you a link to set a new password.</p>
+      <form class="form" id="forgotForm" novalidate>
+        <label class="field"><span data-i18n="f_email">Email</span><input name="email" type="email" autocomplete="email" required></label>
+        <div data-msg role="status" aria-live="polite"></div>
+        <button class="btn btn-primary btn-block" type="submit"><span>Send reset link</span></button>
+        <button type="button" class="link-btn" data-show="auth">Back to sign in</button>
+      </form>
+    </div>
+  </div>
+</div>
 
 <main id="main">
   <section class="hero" id="top">
@@ -440,6 +525,7 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:15px}
 <script src="js/site.js"></script>
 <script src="js/i18n.js"></script>
 <script src="js/contact.js"></script>
+<script src="js/auth.js"></script>
 <script>
 FF.applyLang();   // show saved language (EN / हिं / मरा) on load
 document.getElementById('year').textContent = new Date().getFullYear();
