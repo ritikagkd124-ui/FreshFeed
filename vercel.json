@@ -2,7 +2,7 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
   "redirects": [
-    { "source": "/", "destination": "/FreshFeed", "permanent": false }
+    { "source": "/", "destination": "/home", "permanent": false }
   ],
   "headers": [
     {
